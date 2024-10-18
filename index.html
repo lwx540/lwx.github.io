@@ -9,42 +9,65 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            /* 将背景设置为 meijing.jpeg 图片 */
+            background-image: url("img/meijing.jpeg"); /* 设置图片路径 */
+            background-size: cover; /* 设置图片覆盖整个页面 */
+            color: white; /* 将文字颜色设置为白色 */
         }
         .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            text-align: center; /* 将标题居中 */
         }
         .content {
             margin: 20px;
             padding: 20px;
+            text-align: center; /* 添加此行将内容居中 */
+        }
+        .content > h2 {
+            text-align: center; /* 将标题居中 */
+        }
+        .content > p {
+            text-align: left; /* 将段落左对齐 */
         }
         .footer {
             background-color: #333;
-            color: #fff;
+            /* color: #fff; */ /* 去除 footer 的颜色设置 */
             text-align: center;
             padding: 20px 0;
             position: absolute;
             bottom: 0;
             width: 100%;
         }
+        .button {
+            background-color: #D3D3D3; /* 淡灰色背景 */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 50px; /* 将按钮变成椭圆形 */
+        }
     </style>
 </head>
 <body>
-
     
 <div class="header">
-    <h1>欢迎来到我的主页</h1>
+    <h1 style="text-align: center;">欢迎来到我的主页</h1>
 </div>
  
 <div class="content">
     <!-- 这里是主要内容 -->
-    <h2>个人简历</h2>
+    <h2>个人基本介绍</h2>
     <p>姓名：李文贤</p>
     <p>性别：男</p>
     <p>学号：32222..</p>
     <p>手机号131........</p>
-    <p>邮箱：naibin6923@163.com</p>
+    <p>邮箱：<a href="mailto:naibin6923@163.com">naibin6923@163.com</a></p>
+    <button class="button" onclick="window.location.href='book.html'">跳转到个人收藏夹</button>
+     <button class="button" onclick="window.location.href='aihao.html'">跳转到爱好页</button>
 </div>
+</body>
+</html>
