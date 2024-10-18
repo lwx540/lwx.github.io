@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人收藏夹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* 设置背景色为浅灰色 */
+            color: #333; /* 设置文字颜色为深灰色 */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff; /* 设置链接颜色为蓝色 */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            background-color: #ADD8E6; /* 淡蓝色背景 */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 50px; /* 将按钮变成椭圆形 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>我的收藏夹</h2>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">谷歌搜索</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.baidu.com" target="_blank">百度搜索</a></li>
+            <li><a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a></li>
+            <!-- 添加更多收藏链接 -->
+        </ul>
+    </div>
+    <button class="button" onclick="window.location.href='index.html'">返回主页</button>
+</body>
+</html>
